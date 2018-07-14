@@ -1,0 +1,26 @@
+{
+  "name": "summer-night-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "Clean and vibrant dark Atom syntax theme with colors picked on the HCL color space",
+  "keywords": [
+    "dark",
+    "syntax",
+    "theme",
+    "atom",
+    "clean",
+    "blue",
+    "sunset",
+    "beach",
+    "teal",
+    "orange"
+  ],
+  "repository": "https://github.com/jackw01/summer-night-syntax.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "devDependencies": {
+    "chroma-js": "^1.3.7"
+  }
+}
