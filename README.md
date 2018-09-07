@@ -14,13 +14,6 @@ Accent colors are chosen based on two analogous color scales (one warm and one c
 
 Monochrome colors are chosen from a scale with equidistant lightness in the HCL color space. Eight shades are generated, with the middle four being used as text colors and the darkest shade as a background color.
 
-### Todo
-
-* Further optimization for HTML/XML, CSS/LESS/SCSS, JSON
-* Test and tweak in other languages
-* Other applications
-* Low-contrast version
-
 ### Install
 
 Install the theme via Atom by going to ***Preferences/Settings > Install*** and search for Summer Night Syntax under 'Themes'.
