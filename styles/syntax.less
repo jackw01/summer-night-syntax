@@ -1,11 +1,13 @@
+@import "syntax-variables";
+
 // Language syntax highlighting
 
 .syntax--comment {
-    color: @mono-4;
+    color: @syntax-dim;
     font-style: italic;
 
     .syntax--markup.syntax--link {
-        color: @mono-4;
+        color: @syntax-dim;
     }
 }
 
@@ -31,7 +33,7 @@
     }
 
     &.syntax--operator {
-        color: @mono-3;
+        color: @syntax-fg;
     }
 
     &.syntax--import {
@@ -87,7 +89,7 @@
 }
 
 .syntax--variable {
-    color: @mono-3;
+    color: @syntax-fg;
 
     &.syntax--property {
         color: @hue-6;
@@ -121,7 +123,7 @@
 .syntax--punctuation {
     &.syntax--definition {
         &.syntax--comment {
-            color: @mono-4;
+            color: @syntax-dim;
         }
 
         &.syntax--array,
@@ -130,7 +132,7 @@
         &.syntax--parameters,
         &.syntax--separator,
         &.syntax--seperator {
-            color: @mono-3;
+            color: @syntax-fg;
         }
 
         &.syntax--heading,
@@ -157,7 +159,7 @@
         &.syntax--class,
         &.syntax--inner-class,
         &.syntax--method {
-            color: @mono-3;
+            color: @syntax-fg;
         }
     }
 }
@@ -171,7 +173,7 @@
         color: @hue-3;
     }
 
-    &.syntax-- {
+    &.syntax--function {
         color: @hue-1;
 
         &.syntax--any-method {
@@ -212,17 +214,17 @@
         color: @hue-6;
 
         &.syntax--body {
-            color: @mono-3;
+            color: @syntax-fg;
         }
     }
 
     &.syntax--method,
     &.syntax--method-call {
-        color: @mono-3;
+        color: @syntax-fg;
     }
 
     &.syntax--definition {
-        color: @mono-3;
+        color: @syntax-fg;
     }
 
     &.syntax--link {
@@ -242,7 +244,7 @@
     }
 
     &.syntax--tag {
-        color: @mono-3;
+        color: @syntax-fg;
     }
 }
 
@@ -251,7 +253,7 @@
 }
 
 .syntax--none {
-    color: @mono-3;
+    color: @syntax-fg;
 }
 
 .syntax--invalid {
@@ -322,10 +324,10 @@
 .syntax--source.syntax--css {
     .syntax--property-name,
     .syntax--property-value {
-        color: @mono-4;
+        color: @syntax-dim;
 
         &.syntax--support {
-            color: @mono-3;
+            color: @syntax-fg;
         }
     }
 }
@@ -363,14 +365,14 @@
         color: @hue-5;
 
         & > .syntax--punctuation {
-            color: @mono-3;
+            color: @syntax-fg;
         }
     }
 }
 
 .syntax--source.syntax--js {
     .syntax--keyword.syntax--operator {
-        color: @mono-3;
+        color: @syntax-fg;
         // keywords are definded in https://github.com/atom/language-javascript/blob/master/grammars/javascript.cson
         // search "instanceof" for location
         &.syntax--delete,
@@ -389,7 +391,7 @@
     .syntax--meta.syntax--structure.syntax--dictionary.syntax--json {
         & > .syntax--string.syntax--quoted.syntax--json {
             & > .syntax--punctuation.syntax--string {
-                color: @mono-4;
+                color: @syntax-dim;
             }
             color: @hue-4;
         }

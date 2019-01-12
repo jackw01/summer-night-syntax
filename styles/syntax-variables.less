@@ -1,11 +1,12 @@
-@import "colors-generated.less";
+@import "colors-generated";
 
 // Base colors
-@syntax-fg:     @mono-3;
+@syntax-fg:     @mono-2;
 @syntax-bg:     @mono-8;
+@syntax-dim:    @mono-3;
 @syntax-gutter: @mono-4;
-@syntax-low:    @mono-6;
-@syntax-guide:  @mono-7;
+@syntax-invis:  @mono-5;
+@syntax-guide:  @mono-6;
 @syntax-accent: @hue-2;
 
 // Official Syntax Variables
@@ -18,9 +19,9 @@
 @syntax-background-color:      @syntax-bg;
 
 // Guide colors
-@syntax-wrap-guide-color:          @syntax-low;
+@syntax-wrap-guide-color:          @syntax-invis;
 @syntax-indent-guide-color:        @syntax-guide;
-@syntax-invisible-character-color: @syntax-low;
+@syntax-invisible-character-color: @syntax-invis;
 
 // For find and replace markers
 @syntax-result-marker-color:          fade(@syntax-accent, 17%);
