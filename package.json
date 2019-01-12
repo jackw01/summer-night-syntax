@@ -1,7 +1,7 @@
 {
   "name": "summer-night-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "Clean and vibrant dark Atom syntax theme with colors picked on the HCL color space",
   "keywords": [
     "dark",
